@@ -6,51 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
+    <style>
+        img {
+            border-radius: 150%;
+            border-style: hidden;
+            width: 150px;
+            height: 150px;
+        }
+
+        .tr{
+            text-align: right;
+        }
+        .tl{
+            text-align: left;
+        }
+
+        th {
+            color: darkcyan;
+
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .silver-background {
+            background-color: honeydew;
+        }
+
+        body {
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+
+        }
+    </style>
 </head>
 
 <body>
-    <div align="center">
-        <table>
-            <tr>
-                <td><img src="https://res.cloudinary.com/sir-lighton/image/upload/v1566507311/IMG_20190813_133937_877_1_nsfncl.jpg"
-                        alt="My Photo" width='150px' height='150px'></td>
-                <td>
+
+    <table>
+        <tr>
+            <td>
+                <strong>
                     <h1>
                         OLAONIPEKUN OLAITAN OLAJUWON
                     </h1>
-                </td>
-            </tr>
-        </table>
-        <strong>
-            <span>
-                Motivated web developer and designer with experience creating custom websites through Jinja2
-                and Python. <br>
-                Well-known collaborator with proven track record creating web apps with Django and
-                Flask.
-                Well-versed in Python, GCP, <br>and SQLAlchemy. Pursuing a developer position in a fast
-                paced environment focused on customer experience.
-            </span>
-        </strong>
-    </div>
+                    <span>
+                        Motivated web developer and designer with experience creating custom websites through Jinja2
+                        and Python. <br>
+                        Well-known collaborator with proven track record creating web apps with Django and
+                        Flask.
+                        Well-versed in HTML, CSS, <br> Python, GCP,and SQLAlchemy. Pursuing a developer position in a
+                        fast
+                        paced environment focused on customer experience.
+                    </span>
+                </strong>
+            </td>
+            <td>
+                <img src="https://res.cloudinary.com/sir-lighton/image/upload/v1566507311/IMG_20190813_133937_877_1_nsfncl.jpg"
+                    alt="My Photo">
+            </td>
+        </tr>
+    </table>
 
-    <address align="right" width="80%">
+
+    <address class="tr" width="80%">
         <strong>
             Akobo-Ojurin, Akobo Ibadan,<br>
             OYO STATE.<br>
             08102513640.<br>
-            <a href="olaonipekunolaitan@gmail.com">Email</a>.<br>
+            Email: <a href="">olaonipekunolaitan@gmail.com</a>.<br>
         </strong>
     </address><br>
 
 
-    <table width="100%">
+    <table class="silver-background">
         <tr>
-            <th align="left">EXPERIENCE</th>
-            <th align="right">SKILLS</th>
+            <th class="tl">EXPERIENCE</th>
+            <th class="tr">SKILLS</th>
         </tr>
 
         <tr>
-            <td align="left">
+            <td class="tl">
                 <ul>
                     <li><b>Ar Risalaah Academy.</b><br>
                         ICT Instructor (December 2018 – June 2019)</li>
@@ -60,7 +98,7 @@
                         ICT Instructor (Dec 2011 till Oct 2013)</li>
                 </ul>
             </td>
-            <td align="right">
+            <td class="tr">
                 <span>
                     <b>
                         Strong Work Ethic.<br>
@@ -74,14 +112,14 @@
             </td>
         </tr>
     </table>
-    <table width="100%">
+    <table>
         <tr>
-            <th align="left">EDUCATION</th>
-            <th align="right">TECHNICAL SKILLS</th>
+            <th class="tl">EDUCATION</th>
+            <th class="tr">TECHNICAL SKILLS</th>
         </tr>
 
         <tr>
-            <td align="left">
+            <td class="tl">
                 <ul>
                     <li><b>July 2018 - July 2019. National Youth Service Corps(NYSC)</b></li>
                     <li><b>February 2018 - International English Language Testing System(IELTS)</b><br>
@@ -93,7 +131,7 @@
                         Computer engineering.</li>
                 </ul>
             </td>
-            <td align="right">
+            <td class="tr">
                 <span>
                     <b>
                         Google Cloud Platform.<br>
@@ -101,34 +139,38 @@
                         Restful Apis<br>
                         Jinja2.<br>
                         SqlAlchemy.<br>
-                        Version Control..
+                        Version Control.<br>
                     </b>
                 </span>
             </td>
         </tr>
     </table>
-    <table width="100%">
+    <table class="silver-background">
         <tr>
-            <th align="left">PROJECTS</th>
-            <th align="right">OPERATING SYSTEMS</th>
+            <th class="tl">PROJECTS</th>
+            <th class="tr">OPERATING SYSTEMS</th>
         </tr>
         <tr>
-            <td align="left"><a href="www.linkedin.com/in/olaonipekunolaitan">LinkedIn</a><br>
-                <a href="https://github.com/OLAOSEBIKAN">GitHub</a></td>
-            <td align="right">WINDOWS OS.<br>MAC OS</td>
+            <td class="tl">LinkedIn: <a href="">www.linkedin.com/in/olaonipekunolaitan</a> <br>
+            GitHub: <a href="">https://github.com/OLAOSEBIKAN</a></td>
+            <td class="tr">WINDOWS OS.<br>MAC OS</td>
         </tr>
 
     </table>
-    <table width="100%">
+    <table class="silver-background">
         <tr>
-            <th align="right">AWARDS</th>
+            <th class="tl">HOBBY</th>
+            <th class="tr">AWARDS</th>
         </tr>
-        <td align="right"><b>Award of excellence:</b><br> Nysc servicom CDS group <br> Public Relations Officer. <br>(July 2019)</td>
+        <tr>
+            <td class="tl">Basketball.<br>
+            Traveling.<br>
+            </td>
+            <td class="tr"><b>Award of excellence:</b><br> Nysc servicom CDS group <br> Public Relations Officer.
+                <br>(July 2019)
+            </td>
+        </tr>
     </table>
-
-
-
-
 
 </body>
 
