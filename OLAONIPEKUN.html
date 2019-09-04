@@ -14,10 +14,11 @@
             height: 150px;
         }
 
-        .tr{
+        .tr {
             text-align: right;
         }
-        .tl{
+
+        .tl {
             text-align: left;
         }
 
@@ -39,6 +40,51 @@
             margin-right: 10%;
             margin-left: 10%;
 
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=email],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
         }
     </style>
 </head>
@@ -152,7 +198,7 @@
         </tr>
         <tr>
             <td class="tl">LinkedIn: <a href="">www.linkedin.com/in/olaonipekunolaitan</a> <br>
-            GitHub: <a href="">https://github.com/OLAOSEBIKAN</a></td>
+                GitHub: <a href="">https://github.com/OLAOSEBIKAN</a></td>
             <td class="tr">WINDOWS OS.<br>MAC OS</td>
         </tr>
 
@@ -164,13 +210,50 @@
         </tr>
         <tr>
             <td class="tl">Basketball.<br>
-            Traveling.<br>
+                Traveling.<br>
             </td>
             <td class="tr"><b>Award of excellence:</b><br> Nysc servicom CDS group <br> Public Relations Officer.
                 <br>(July 2019)
             </td>
         </tr>
     </table>
+
+    <div>
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">Name</label>
+                <input class="nonum" type="text" id="fname" name="name" placeholder="Your name.." required minlength="4" ><br>
+
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="email" placeholder="Email Address" required><br>
+
+                <label for="Email">Title</label>
+                <input class="nonum" type="text" id="title" name="title" placeholder="Title" required ><br>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."
+                style="height:200px" required minlength="20"></textarea><br>
+
+                <input id="submit" type="submit" value="Submit" onclick="myFunction()" >
+                <script>
+                        function myFunction() {
+                          var x, text;
+                        
+                          // Get the value of the input field with id="numb"
+                          x = document.getElementByClassName("nonum").value;
+                          // If x is a number
+                          if (isNaN(x)) {
+                            text = "Input OK";
+                          } else {
+                            text = "Input not valid";
+                          }
+                        }
+                        </script>
+
+            </form>
+        </div>
+    </div>
 
 </body>
 
